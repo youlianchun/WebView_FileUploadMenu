@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebMenuConteoller">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKG-JC-z9X">
+                    <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbP-g4-ZtH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <state key="normal" title="相机"/>
+                            <connections>
+                                <action selector="cameraAction" destination="-1" eventType="touchUpInside" id="9Cr-P2-KJ2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuL-Wo-yCm">
+                            <rect key="frame" x="0.0" y="100" width="375" height="100"/>
+                            <state key="normal" title="相册"/>
+                            <connections>
+                                <action selector="albumAction" destination="-1" eventType="touchUpInside" id="crA-t7-3q1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C0-ZR-y1k">
+                            <rect key="frame" x="0.0" y="200" width="375" height="100"/>
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="cancelAction" destination="-1" eventType="touchUpInside" id="eBs-WW-WnL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="wuL-Wo-yCm" firstAttribute="height" secondItem="rbP-g4-ZtH" secondAttribute="height" id="0os-eL-gOI"/>
+                        <constraint firstAttribute="bottom" secondItem="9C0-ZR-y1k" secondAttribute="bottom" id="8Mw-RW-soY"/>
+                        <constraint firstAttribute="trailing" secondItem="9C0-ZR-y1k" secondAttribute="trailing" id="AqB-vc-J3d"/>
+                        <constraint firstItem="rbP-g4-ZtH" firstAttribute="leading" secondItem="YKG-JC-z9X" secondAttribute="leading" id="C9Z-YI-bVR"/>
+                        <constraint firstItem="9C0-ZR-y1k" firstAttribute="top" secondItem="wuL-Wo-yCm" secondAttribute="bottom" id="CLy-d6-oyt"/>
+                        <constraint firstAttribute="trailing" secondItem="rbP-g4-ZtH" secondAttribute="trailing" id="HyD-aP-Ewx"/>
+                        <constraint firstItem="9C0-ZR-y1k" firstAttribute="leading" secondItem="YKG-JC-z9X" secondAttribute="leading" id="PTQ-5H-Slx"/>
+                        <constraint firstItem="9C0-ZR-y1k" firstAttribute="height" secondItem="rbP-g4-ZtH" secondAttribute="height" id="cGA-En-XZ0"/>
+                        <constraint firstItem="rbP-g4-ZtH" firstAttribute="top" secondItem="YKG-JC-z9X" secondAttribute="top" id="cq4-00-gmZ"/>
+                        <constraint firstAttribute="height" constant="300" id="cqA-JW-i6N"/>
+                        <constraint firstItem="wuL-Wo-yCm" firstAttribute="top" secondItem="rbP-g4-ZtH" secondAttribute="bottom" id="npc-7b-YWa"/>
+                        <constraint firstItem="wuL-Wo-yCm" firstAttribute="leading" secondItem="YKG-JC-z9X" secondAttribute="leading" id="oGJ-xT-zjr"/>
+                        <constraint firstAttribute="trailing" secondItem="wuL-Wo-yCm" secondAttribute="trailing" id="uLE-gH-Cf0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.30380458047945208" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YKG-JC-z9X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I7k-3s-VsI"/>
+                <constraint firstAttribute="trailing" secondItem="YKG-JC-z9X" secondAttribute="trailing" id="Pop-l7-6wl"/>
+                <constraint firstAttribute="bottom" secondItem="YKG-JC-z9X" secondAttribute="bottom" id="gZI-UK-xGz"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
